@@ -182,11 +182,13 @@ The backend is built with .NET 8. The solution can be opened and run directly in
 
 ### Testing
 
+The application has a comprehensive testing strategy with both unit tests and end-to-end (E2E) tests to ensure reliability and quality.
+
 #### Frontend Unit Tests
 
 Unit tests for the frontend code are located in the `MyApp.ClientTests` directory. These tests use Vitest as the testing framework.
 
-**Running the Tests:**
+**Running the Unit Tests:**
 
 1. **Navigate to the test directory:**
    ```bash
@@ -218,7 +220,7 @@ Unit tests for the frontend code are located in the `MyApp.ClientTests` director
    npm run test:ui
    ```
 
-**Test Coverage:**
+**Unit Test Coverage:**
 
 The unit tests are designed to achieve at least 80% line coverage. The test suite includes:
 
@@ -231,14 +233,111 @@ The unit tests are designed to achieve at least 80% line coverage. The test suit
 
 The tests focus on the behavior and structure of the code that can be reliably tested while working around the complex ServiceStack dependencies.
 
+#### End-to-End (E2E) Tests
+
+E2E tests are located in the `MyApp.E2ETests` directory and use Playwright to test the complete application flow from a user's perspective.
+
+**Running the E2E Tests:**
+
+1. **Ensure the application is running:**
+   ```bash
+   # In Visual Studio or separate terminal, start the main application
+   # The E2E tests expect the app to be available at https://localhost:5001
+   ```
+
+2. **Navigate to the E2E test directory:**
+   ```bash
+   cd MyApp.E2ETests
+   ```
+
+3. **Install dependencies and browsers:**
+   ```bash
+   npm install
+   npm run install
+   ```
+
+4. **Run all E2E tests:**
+   ```bash
+   npm test
+   ```
+
+5. **Run with interactive UI:**
+   ```bash
+   npm run test:ui
+   ```
+
+6. **Run in headed mode (visible browser):**
+   ```bash
+   npm run test:headed
+   ```
+
+7. **Run with Docker (MCP integration):**
+   ```bash
+   npm run test:docker
+   ```
+
+8. **View test report:**
+   ```bash
+   npm run test:report
+   ```
+
+**E2E Test Coverage:**
+
+The E2E test suite includes:
+
+- **Authentication Tests**: Sign in/sign up flows, validation, security testing
+- **Navigation Tests**: Page routing, menu functionality, user journeys
+- **Visual Regression Tests**: Screenshot comparisons across browsers and viewports
+- **Cross-Browser Testing**: Chrome, Firefox, Safari, Mobile browsers
+- **Security Testing**: XSS, SQL injection, input validation
+- **Performance Testing**: Page load times, console error detection
+
+**Test Architecture:**
+
+- **Page Object Model**: Reusable page objects for maintainable tests
+- **Test Fixtures**: Centralized test data and user management
+- **Multi-Browser Support**: Automated testing across different browsers
+- **Visual Testing**: Automated screenshot comparison for UI consistency
+- **Docker Integration**: Consistent test execution environment
+
 **Test Files:**
 
+**Unit Tests:**
 - `MyApp.ClientTests/api.test.ts`: Unit tests for `MyApp.Client/src/api.ts`
+
+**E2E Tests:**
+- `MyApp.E2ETests/tests/home.spec.ts`: Home page functionality and visual tests
+- `MyApp.E2ETests/tests/auth.signin.spec.ts`: Sign in authentication tests
+- `MyApp.E2ETests/tests/auth.signup.spec.ts`: User registration tests
+- `MyApp.E2ETests/tests/pages/`: Page Object Model implementation
+- `MyApp.E2ETests/tests/fixtures/`: Test data and user fixtures
 
 Each test is clearly documented with:
 - What functionality is being tested
 - What the expected behavior should be
 - Why the test is important
+
+**MCP Integration:**
+
+The E2E tests support Model Context Protocol (MCP) integration with Playwright using Docker:
+
+```json
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "docker",
+      "args": ["run", "-i", "--rm", "--init", "mcp/playwright"],
+      "tools": ["*"]
+    }
+  }
+}
+```
+
+This provides:
+- Consistent test execution environment
+- CI/CD pipeline compatibility
+- Cross-platform testing capabilities
+- Isolated test runs
 
 ## License
 
