@@ -180,6 +180,66 @@ Frontend development is done using Vue 3 with Vite. The frontend code is located
 
 The backend is built with .NET 8. The solution can be opened and run directly in Visual Studio.
 
+### Testing
+
+#### Frontend Unit Tests
+
+Unit tests for the frontend code are located in the `MyApp.ClientTests` directory. These tests use Vitest as the testing framework.
+
+**Running the Tests:**
+
+1. **Navigate to the test directory:**
+   ```bash
+   cd MyApp.ClientTests
+   ```
+
+2. **Install test dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Run all tests:**
+   ```bash
+   npm run test:run
+   ```
+
+4. **Run tests with coverage:**
+   ```bash
+   npm run test:coverage
+   ```
+
+5. **Run tests in interactive mode:**
+   ```bash
+   npm test
+   ```
+
+6. **Run tests with UI:**
+   ```bash
+   npm run test:ui
+   ```
+
+**Test Coverage:**
+
+The unit tests are designed to achieve at least 80% line coverage. The test suite includes:
+
+- **api.ts tests**: Comprehensive tests for the API module including:
+  - Module structure validation
+  - Function signature verification
+  - Error handling scenarios
+  - Global variable handling
+  - Type safety checks
+
+The tests focus on the behavior and structure of the code that can be reliably tested while working around the complex ServiceStack dependencies.
+
+**Test Files:**
+
+- `MyApp.ClientTests/api.test.ts`: Unit tests for `MyApp.Client/src/api.ts`
+
+Each test is clearly documented with:
+- What functionality is being tested
+- What the expected behavior should be
+- Why the test is important
+
 ## License
 
 This project is based on the [vue-spa](https://github.com/NetCoreTemplates/vue-spa) template which is licensed under the terms of the MIT license.
