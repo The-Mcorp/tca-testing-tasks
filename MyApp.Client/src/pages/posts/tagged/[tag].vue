@@ -8,7 +8,7 @@
     </div>
     <div class="relative my-4 mx-auto max-w-7xl">
       <div class="flex flex-wrap justify-center">
-        <template v-for="tag in allTags">
+        <template v-for="tag in allTags" :key="tag">
           <span v-if="tag == selectedTag" class="mr-2 mb-2 text-xs leading-5 font-semibold bg-indigo-600 text-white rounded-full py-1 px-3 flex items-center space-x-2">{{tag}}</span>
           <RouterLink v-else :to="tagLink(tag)" class="mr-2 mb-2 text-xs leading-5 font-semibold bg-slate-400/10 dark:bg-slate-400/30 rounded-full py-1 px-3 flex items-center space-x-2 hover:bg-slate-400/20 dark:hover:bg-slate-400/40 dark:highlight-white/5">{{tag}}</RouterLink>
         </template>

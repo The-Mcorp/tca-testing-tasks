@@ -81,9 +81,9 @@
 </template>
 
 <script setup lang="ts">
-import Logo from "@/assets/img/logo.svg"
 import { useAuth } from "@servicestack/vue"
-const { user, hasRole } = useAuth()
-
+import Logo from "@/assets/img/logo.svg"
 import { signout } from "@/auth"
+
+const { user, hasRole } = useAuth()
 </script>

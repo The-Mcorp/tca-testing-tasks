@@ -8,7 +8,7 @@
     </div>
     <div class="mt-4 relative mb-8 mx-auto max-w-7xl">
       <div class="flex flex-wrap justify-center">
-        <template v-for="year in allYears">
+        <template v-for="year in allYears" :key="year">
           <b v-if="forYear == year" class="ml-3 text-sm font-semibold">{{year}}</b>
           <RouterLink v-else class="ml-3 text-sm text-indigo-700 dark:text-indigo-300 font-semibold hover:underline" :to="yearLink(year)">{{year}}</RouterLink>
         </template>

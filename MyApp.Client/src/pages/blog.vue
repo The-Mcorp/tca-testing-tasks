@@ -34,7 +34,7 @@
     <section v-if="gridPosts.length">
       <h2 class="mb-8 text-6xl md:text-7xl font-bold tracking-tighter leading-tight">More from the blog</h2>
       <div class="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
-        <div v-for="post in gridPosts as Post[]" class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+        <div v-for="post in gridPosts as Post[]" :key="post.slug" class="flex flex-col overflow-hidden rounded-lg shadow-lg">
           <div class="flex-shrink-0">
             <RouterLink :to="postLink(post)">
               <img class="h-48 w-full object-cover" :src="post.image" alt="">
@@ -77,7 +77,7 @@
     <section v-if="remainingPosts.length" class="mt-24 flex justify-center">
       <div class="flex max-w-screen-lg">
         <div class="w-2/3">
-          <div v-for="post in remainingPosts as Post[]" class="border-b pb-4 mb-4">
+          <div v-for="post in remainingPosts as Post[]" :key="post.slug" class="border-b pb-4 mb-4">
             <div class="flex justify-between">
               <div class="w-3/4">
                 <RouterLink :to="postLink(post)" class="mt-2 block">

@@ -24,7 +24,7 @@
         <div class="flex max-w-3xl mx-auto justify-between">
           <div>
             <div class="mb-4 flex flex-wrap">
-              <RouterLink v-for="tag in post.tags" :to="tagLink(tag)" class="mr-2 mb-2 text-xs leading-5 font-semibold bg-slate-400/10 dark:bg-slate-400/30 rounded-full py-1 px-3 flex items-center space-x-2 hover:bg-slate-400/20 dark:hover:bg-slate-400/40 dark:highlight-white/5">{{tag}}</RouterLink>
+              <RouterLink v-for="tag in post.tags" :key="tag" :to="tagLink(tag)" class="mr-2 mb-2 text-xs leading-5 font-semibold bg-slate-400/10 dark:bg-slate-400/30 rounded-full py-1 px-3 flex items-center space-x-2 hover:bg-slate-400/20 dark:hover:bg-slate-400/40 dark:highlight-white/5">{{tag}}</RouterLink>
             </div>
             <div v-if="post.date" class="max-w-3xl mx-auto">
               <div class="mb-6 text-lg text-gray-500 dark:text-gray-400">
@@ -67,7 +67,7 @@
           </div>
           <div class="grid grid-cols-2 gap-8">
             
-            <div v-for="authorPost in authorPosts as Post[]">
+            <div v-for="authorPost in authorPosts as Post[]" :key="authorPost.slug">
               <div class="flex flex-col overflow-hidden">
                 <div class="flex-shrink-0">
                   <RouterLink :to="postLink(authorPost)">

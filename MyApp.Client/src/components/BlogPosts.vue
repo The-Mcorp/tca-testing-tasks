@@ -1,6 +1,6 @@
 <template>
   <div class="mx-auto grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
-    <div v-for="post in posts" class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+    <div v-for="post in posts" :key="post.slug" class="flex flex-col overflow-hidden rounded-lg shadow-lg">
       <div class="flex-shrink-0">
         <a :href="postLink(post)">
           <img class="h-48 w-full object-cover" :src="post.image" alt="">

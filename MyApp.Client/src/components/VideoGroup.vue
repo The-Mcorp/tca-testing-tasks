@@ -8,14 +8,14 @@
           <a v-if="learnMore" :href="learnMore" class="ml-2 text-sm font-semibold leading-6">Learn more <span aria-hidden="true">→</span></a>
         </p>
         <div class="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
-          <article v-for="video in videos as Video[]" class="relative isolate flex flex-col gap-8 lg:flex-row">
+          <article v-for="video in videos as Video[]" :key="video.url" class="relative isolate flex flex-col gap-8 lg:flex-row">
             <div class="relative lg:w-1/2 lg:shrink-0">
               <LiteYouTube :id="videoId(video.url)" :title="video.title" />
             </div>
             <div>
               <div class="flex items-center gap-x-4 text-xs">
                 <time datetime="2020-03-16" class="text-gray-500 dark:text-gray-400">{{dateFmt(video.date)}}</time>
-                <span v-for="tag in video.tags" class="relative z-10 rounded-full bg-gray-50 dark:bg-gray-800 py-1.5 px-3 font-medium text-gray-600 dark:text-gray-300">
+                <span v-for="(tag, index) in video.tags" :key="index" class="relative z-10 rounded-full bg-gray-50 dark:bg-gray-800 py-1.5 px-3 font-medium text-gray-600 dark:text-gray-300">
                   {{ tag }}
                 </span>
               </div>

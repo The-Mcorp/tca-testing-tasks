@@ -7,16 +7,16 @@
         </section>
     </div>
     <div class="relative px-6 pt-16 pb-20 lg:px-8 lg:pt-24 lg:pb-28">
-        <div v-for="(features, release) in releases" class="relative mx-auto max-w-7xl">
+        <div v-for="(features, release) in releases" :key="release" class="relative mx-auto max-w-7xl">
             <h2 class="text-center mb-4 text-6xl md:text-7xl font-bold tracking-tighter leading-tight">{{ releaseVersion(release as string) }}</h2>
             <div class="text-center text-lg font-normal text-gray-500 dark:text-gray-400 mb-8">{{ formatDate(releaseDate(release as string)) }}</div>
-            <div v-for="feature in features" class="flex flex-wrap my-24">
+            <div v-for="feature in features" :key="feature.url" class="flex flex-wrap my-24">
                 <div class="w-full sm:w-1/2 animated px-4">
-                    <RouterLink :to="feature.url"><img :src="feature.image" alt="" loading="lazy"></RouterLink>
+                    <RouterLink :to="feature.url"><img :src="feature.image" loading="lazy" alt=""></RouterLink>
                 </div>
                 <div class="w-full sm:w-1/2 text-left wow fadeInLeft animated px-4">
                     <h3 class="m-0 mb-4">
-                        <RouterLink class="text-2xl font-normal text-blue-500 hover:text-blue-600" :to="feature.url">{{ feature.title }}</RouterLink>
+                        <RouterLink :to="feature.url" class="text-2xl font-normal text-blue-500 hover:text-blue-600">{{ feature.title }}</RouterLink>
                     </h3>
                     <div class="prose dark:prose-invert max-w-none">
                         <MarkdownComponent type="whatsNew" :doc="feature" :group="(release as string)" />

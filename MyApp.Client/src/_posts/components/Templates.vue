@@ -16,7 +16,7 @@
     : templates.length === 2 
         ? 'grid-cols-2 max-w-md mx-auto' 
         : 'grid-cols-3']">
-      <div v-for="template in templates" class="mb-2">
+      <div v-for="template in templates" :key="template.repo" class="mb-2">
         <div class="flex justify-center text-center">
           <a class="archive-url hover:no-underline" :href="zipUrl('NetCoreTemplates/' + template.repo)">
             <div class="bg-white dark:bg-gray-800 px-4 py-4 mr-4 mb-4 rounded-lg shadow-lg text-center items-center justify-center hover:shadow-2xl dark:border-2 dark:border-pink-600 dark:hover:border-blue-600 dark:border-2 dark:border-pink-600 dark:hover:border-blue-600" style="min-width:150px">
@@ -26,7 +26,7 @@
               </div>
               <div class="text-xl font-medium text-gray-700">{{ template.name }}</div>
               <div class="flex justify-center h-8">
-                <div v-for="tag in template.tags" class="mr-1">
+                <div v-for="(tag, index) in template.tags" :key="index" class="mr-1">
                   <span class="px-2 h-8 rounded-lg bg-blue-50 dark:bg-blue-900 text-blue-500 dark:text-blue-400 text-sm">{{tag}}</span>
                 </div>
               </div>
