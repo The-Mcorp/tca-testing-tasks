@@ -11,10 +11,10 @@
       </div>
       <nav class="flex flex-1 flex-col">
         <ul role="list" class="flex flex-1 flex-col gap-y-7">
-          <li v-for="group in new Set(Object.keys(sections).flatMap(k => sections[k].group))">
+          <li v-for="group in new Set(Object.keys(sections).flatMap(k => sections[k].group))" :key="group">
             <div v-if="group" class="text-sm font-semibold leading-6 text-gray-400">{{group}}</div>
             <ul role="list" class="-mx-2 space-y-1">
-              <li v-for="section in Object.keys(sections).map(k => sections[k].group === group ? sections[k] : null).filter(x => !!x)">
+              <li v-for="section in Object.keys(sections).map(k => sections[k].group === group ? sections[k] : null).filter(x => !!x)" :key="section.id">
                 <RouterLink :to="`/admin/${section.page ?? section.id}`" :class="[activeSection.id === section.id ? 'bg-gray-50 dark:bg-gray-900 text-indigo-600 dark:text-indigo-300' : 'cursor-pointer text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-300 hover:bg-gray-50 dark:hover:bg-gray-900', 'group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold select-none']">
                   <Icon :svg="section.icon" class="h-6 w-6 shrink-0 text-indigo-600 dark:text-indigo-300" />
                   {{section.label}}
