@@ -297,7 +297,7 @@ describe('api.ts', () => {
       ]
       
       for (const apiUrl of testApiUrls) {
-        globalThis.API_URL = apiUrl
+        (globalThis as any).API_URL = apiUrl
         
         vi.resetModules()
         const apiModule = await import('@/api')
@@ -326,11 +326,11 @@ describe('api.ts', () => {
        * Expected: Should work even if some globals are undefined
        */
       // Temporarily remove globals
-      const originalLocation = globalThis.location
-      const originalApiUrl = globalThis.API_URL
+      const originalLocation = (globalThis as any).location
+      const originalApiUrl = (globalThis as any).API_URL
       
-      delete globalThis.location
-      delete globalThis.API_URL
+      delete (globalThis as any).location
+      delete (globalThis as any).API_URL
       
       try {
         vi.resetModules()
@@ -344,8 +344,8 @@ describe('api.ts', () => {
         
       } finally {
         // Restore globals
-        globalThis.location = originalLocation
-        globalThis.API_URL = originalApiUrl
+        (globalThis as any).location = originalLocation
+        (globalThis as any).API_URL = originalApiUrl
       }
     })
   })

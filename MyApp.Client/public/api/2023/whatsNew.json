@@ -8,7 +8,7 @@
         "lineCount": 9,
         "title": "Planetaria",
         "url": "http://planetaria.tech",
-        "image": "https://locahost:5173/img/whatsnew/planetaria.svg",
+        "image": "/img/whatsnew/planetaria.svg",
         "group": "Planetaria"
     },
     {
@@ -20,7 +20,7 @@
         "lineCount": 8,
         "title": "OpenShuttle",
         "url": "https://example.org",
-        "image": "https://locahost:5173/img/whatsnew/open-shuttle.svg",
+        "image": "/img/whatsnew/open-shuttle.svg",
         "group": "OpenShuttle"
     },
     {
@@ -31,8 +31,8 @@
         "wordCount": 86,
         "lineCount": 7,
         "title": "Animaginary",
-        "url": "https://locahost:5173/blog",
-        "image": "https://locahost:5173/img/whatsnew/animaginary.svg",
+        "url": "/blog",
+        "image": "/img/whatsnew/animaginary.svg",
         "group": "Animaginary"
     }
 ]

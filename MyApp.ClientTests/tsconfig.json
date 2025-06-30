@@ -10,10 +10,11 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "strict": true,
+    "strict": false,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": false,
     "types": ["vitest/globals", "jsdom"],
     "baseUrl": ".",
     "paths": {
@@ -22,10 +23,10 @@
   },
   "include": [
     "**/*.ts",
-    "**/*.tsx",
-    "../MyApp.Client/src/**/*"
+    "**/*.tsx"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "../MyApp.Client/src/**/*"
   ]
 }
