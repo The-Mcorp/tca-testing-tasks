@@ -1,15 +1,15 @@
 {
     "blog": [
-        "https://locahost:5173/meta/2024/blog.json",
-        "https://locahost:5173/meta/2023/blog.json",
-        "https://locahost:5173/meta/2022/blog.json",
-        "https://locahost:5173/meta/2021/blog.json"
+        "/meta/2024/blog.json",
+        "/meta/2023/blog.json",
+        "/meta/2022/blog.json",
+        "/meta/2021/blog.json"
     ],
     "videos": [
-        "https://locahost:5173/meta/2024/videos.json",
-        "https://locahost:5173/meta/2023/videos.json"
+        "/meta/2024/videos.json",
+        "/meta/2023/videos.json"
     ],
     "whatsNew": [
-        "https://locahost:5173/meta/2023/whatsNew.json"
+        "/meta/2023/whatsNew.json"
     ]
 }

@@ -14,7 +14,7 @@
             "summary": "Introducing the Vite Press Plugin for Vite Vue & React Apps",
             "author": "Lucy Bates",
             "image": "https://images.unsplash.com/photo-1524668951403-d44b28200ce0?crop=entropy&fit=crop&h=1000&w=2000",
-            "url": "https://locahost:5173/posts/vite-press-plugin"
+            "url": "/posts/vite-press-plugin"
         },
         {
             "slug": "markdown-components-in-vue",
@@ -30,24 +30,7 @@
             "summary": "How to reference and Import Vue Components in Markdown",
             "author": "Lucy Bates",
             "image": "https://images.unsplash.com/photo-1700427296131-0cc4c4610fc6?crop=entropy&fit=crop&h=1000&w=2000",
-            "url": "https://locahost:5173/posts/markdown-components-in-vue"
-        },
-        {
-            "slug": "jwt-identity-auth",
-            "fileName": "jwt-identity-auth.md",
-            "date": "2024-02-11",
-            "tags": [
-                "servicestack",
-                ".net8",
-                "auth"
-            ],
-            "wordCount": 1002,
-            "lineCount": 231,
-            "title": "ASP.NET Core JWT Identity Auth",
-            "summary": "Learn about integration and value added features of ASP.NET Core JWT Identity Auth",
-            "image": "https://images.unsplash.com/photo-1618482914248-29272d021005?crop=entropy&fit=crop&h=1000&w=2000",
-            "author": "Brandon Foley",
-            "url": "https://locahost:5173/posts/jwt-identity-auth"
+            "url": "/posts/markdown-components-in-vue"
         },
         {
             "slug": "identity-auth-admin-ui",
@@ -64,7 +47,7 @@
             "summary": "Explore the new Identity Auth Admin UI for creating and managing Identity Auth users in .NET 8",
             "image": "https://images.unsplash.com/photo-1563920443079-783e5c786b83?crop=entropy&fit=crop&h=1000&w=2000",
             "author": "Lucy Bates",
-            "url": "https://locahost:5173/posts/identity-auth-admin-ui"
+            "url": "/posts/identity-auth-admin-ui"
         },
         {
             "slug": "system-text-json-apis",
@@ -82,7 +65,7 @@
             "summary": "ServiceStack .NET 8+ APIs can now be configured to use high-performance async System.Text.Json serialization",
             "image": "https://images.unsplash.com/photo-1644325349124-d1756b79dd42?crop=entropy&fit=crop&h=1000&w=2000",
             "author": "Gayle Smith",
-            "url": "https://locahost:5173/posts/system-text-json-apis"
+            "url": "/posts/system-text-json-apis"
         },
         {
             "slug": "openapi-v3",
@@ -98,7 +81,7 @@
             "summary": "A walkthrough of the new OpenAPI v3 support in ServiceStack 8.1",
             "image": "https://images.unsplash.com/photo-1496478981722-3ae516118a04?crop=entropy&fit=crop&h=1000&w=2000",
             "author": "Brandon Foley",
-            "url": "https://locahost:5173/posts/openapi-v3"
+            "url": "/posts/openapi-v3"
         },
         {
             "slug": "servicestack-endpoint-routing",
@@ -115,7 +98,7 @@
             "summary": "ServiceStack .NET 8 is now more integrated then ever with support for ASP.NET Core Endpoint Routing and IOC",
             "image": "https://images.unsplash.com/photo-1510022151265-1bb84d406531?crop=entropy&fit=crop&h=1000&w=2000",
             "author": "Lucy Bates",
-            "url": "https://locahost:5173/posts/servicestack-endpoint-routing"
+            "url": "/posts/servicestack-endpoint-routing"
         },
         {
             "slug": "net8-docker-containers",
@@ -133,7 +116,7 @@
             "summary": ".NET 8 Docker Containers and GitHub Actions Deployments in new Project Templates",
             "image": "https://images.unsplash.com/photo-1609884557151-1e356d32900c?crop=entropy&fit=crop&h=1000&w=2000",
             "author": "Lucy Bates",
-            "url": "https://locahost:5173/posts/net8-docker-containers"
+            "url": "/posts/net8-docker-containers"
         },
         {
             "slug": "net8-identity-auth",
@@ -150,7 +133,7 @@
             "summary": "ServiceStack has switched to ASP.NET Core Identity Auth in new .NET 8 Blazor, Razor and MVC Project Templates",
             "image": "https://images.unsplash.com/photo-1635602739175-bab409a6e94c?crop=entropy&fit=crop&h=1000&w=2000",
             "author": "Brandon Foley",
-            "url": "https://locahost:5173/posts/net8-identity-auth"
+            "url": "/posts/net8-identity-auth"
         },
         {
             "slug": "net8-best-blazor",
@@ -167,7 +150,7 @@
             "summary": "We explore the exciting new potential of Blazor in .NET 8 to develop fast, interactive Web Apps without compromise",
             "image": "https://images.unsplash.com/photo-1482686115713-0fbcaced6e28?crop=entropy&fit=crop&h=1000&w=2000",
             "author": "Gayle Smith",
-            "url": "https://locahost:5173/posts/net8-best-blazor"
+            "url": "/posts/net8-best-blazor"
         },
         {
             "slug": "net8-blazor-template",
@@ -184,7 +167,7 @@
             "summary": "The new Blazor for .NET 8 template streamlines web UI development in C#.",
             "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?crop=entropy&fit=crop&h=1000&w=2000",
             "author": "Lucy Bates",
-            "url": "https://locahost:5173/posts/net8-blazor-template"
+            "url": "/posts/net8-blazor-template"
         },
         {
             "slug": "razor-ssg-new-blog-features",
@@ -202,7 +185,7 @@
             "summary": "Explore the new Blogging Features in Razor SSG",
             "image": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?crop=entropy&fit=crop&h=1000&w=2000",
             "author": "Lucy Bates",
-            "url": "https://locahost:5173/posts/razor-ssg-new-blog-features"
+            "url": "/posts/razor-ssg-new-blog-features"
         },
         {
             "slug": "razor-ssg",
@@ -220,7 +203,7 @@
             "summary": "Create fast, beautiful statically rendered Razor Websites & Blogs",
             "image": "https://images.unsplash.com/photo-1579767684138-a57e917d30aa?crop=entropy&fit=crop&h=1000&w=2000",
             "author": "Lucy Bates",
-            "url": "https://locahost:5173/posts/razor-ssg"
+            "url": "/posts/razor-ssg"
         },
         {
             "slug": "javascript",
@@ -236,7 +219,7 @@
             "summary": "Learn about JS Modules, Vue 3 and available rich UI Components",
             "image": "https://images.unsplash.com/photo-1497515114629-f71d768fd07c?crop=entropy&fit=crop&h=1000&w=2000",
             "author": "Brandon Foley",
-            "url": "https://locahost:5173/posts/javascript"
+            "url": "/posts/javascript"
         },
         {
             "slug": "start",
@@ -253,7 +236,7 @@
             "summary": "Found out how to use these template features",
             "author": "Gayle Smith",
             "image": "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?crop=entropy&fit=crop&h=1000&w=2000",
-            "url": "https://locahost:5173/posts/start"
+            "url": "/posts/start"
         },
         {
             "slug": "rider",
@@ -269,7 +252,7 @@
             "summary": "Setting up & exploring development workflow in Rider",
             "author": "Gayle Smith",
             "image": "https://images.unsplash.com/photo-1472289065668-ce650ac443d2?crop=entropy&fit=crop&h=1000&w=2000",
-            "url": "https://locahost:5173/posts/rider"
+            "url": "/posts/rider"
         },
         {
             "slug": "vs",
@@ -285,7 +268,7 @@
             "summary": "Exploring development workflow in VS Code and Visual Studio .NET",
             "author": "Lucy Bates",
             "image": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?crop=entropy&fit=crop&h=1000&w=2000",
-            "url": "https://locahost:5173/posts/vs"
+            "url": "/posts/vs"
         },
         {
             "slug": "deploy",
@@ -301,7 +284,7 @@
             "summary": "Configuring your GitHub repo for SSH and CDN deployments",
             "author": "Gayle Smith",
             "image": "https://images.unsplash.com/photo-1485841890310-6a055c88698a?crop=entropy&fit=crop&h=1000&w=2000",
-            "url": "https://locahost:5173/posts/deploy"
+            "url": "/posts/deploy"
         },
         {
             "slug": "typography",
@@ -317,7 +300,7 @@
             "summary": "tailwindcss/typography enabled for Markdown pages",
             "author": "Lucy Bates",
             "image": "https://images.unsplash.com/photo-1497250681960-ef046c08a56e?crop=entropy&fit=crop&h=1000&w=2000",
-            "url": "https://locahost:5173/posts/typography"
+            "url": "/posts/typography"
         },
         {
             "slug": "hetzner-cloud",
@@ -334,7 +317,7 @@
             "summary": "We've been using AWS at ServiceStack for 10+ years, it's served us well but suffers from complex & expensive pricing",
             "author": "Brandon Foley",
             "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?crop=entropy&fit=crop&h=1000&w=2000",
-            "url": "https://locahost:5173/posts/hetzner-cloud"
+            "url": "/posts/hetzner-cloud"
         },
         {
             "slug": "typesense",
@@ -350,7 +333,7 @@
             "summary": "As part of migrating docs to VitePress we've added UX improvements like instant search powered by Typesense!",
             "author": "Lucy Bates",
             "image": "https://images.unsplash.com/photo-1473163928189-364b2c4e1135?crop=entropy&fit=crop&h=1000&w=2000",
-            "url": "https://locahost:5173/posts/typesense"
+            "url": "/posts/typesense"
         },
         {
             "slug": "jekyll-to-vitepress",
@@ -366,7 +349,7 @@
             "summary": "Since Jekyll support has been officially sunset, we decided to migrate our docs site to VitePress",
             "author": "Lucy Bates",
             "image": "https://images.unsplash.com/photo-1524668951403-d44b28200ce0?crop=entropy&fit=crop&h=1000&w=2000",
-            "url": "https://locahost:5173/posts/jekyll-to-vitepress"
+            "url": "/posts/jekyll-to-vitepress"
         }
     ],
     "videos": [
@@ -457,7 +440,7 @@
             "lineCount": 9,
             "title": "Planetaria",
             "url": "http://planetaria.tech",
-            "image": "https://locahost:5173/img/whatsnew/planetaria.svg",
+            "image": "/img/whatsnew/planetaria.svg",
             "group": "Planetaria"
         },
         {
@@ -469,7 +452,7 @@
             "lineCount": 8,
             "title": "OpenShuttle",
             "url": "https://example.org",
-            "image": "https://locahost:5173/img/whatsnew/open-shuttle.svg",
+            "image": "/img/whatsnew/open-shuttle.svg",
             "group": "OpenShuttle"
         },
         {
@@ -480,8 +463,8 @@
             "wordCount": 86,
             "lineCount": 7,
             "title": "Animaginary",
-            "url": "https://locahost:5173/blog",
-            "image": "https://locahost:5173/img/whatsnew/animaginary.svg",
+            "url": "/blog",
+            "image": "/img/whatsnew/animaginary.svg",
             "group": "Animaginary"
         }
     ]

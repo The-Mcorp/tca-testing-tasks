@@ -1,21 +1,5 @@
 [
     {
-        "slug": "deploy",
-        "fileName": "deploy.md",
-        "date": "2023-01-01",
-        "tags": [
-            "github-actions",
-            "devops"
-        ],
-        "wordCount": 735,
-        "lineCount": 100,
-        "title": "Deployment with GitHub Actions",
-        "summary": "Configuring your GitHub repo for SSH and CDN deployments",
-        "author": "Gayle Smith",
-        "image": "https://images.unsplash.com/photo-1485841890310-6a055c88698a?crop=entropy&fit=crop&h=1000&w=2000",
-        "url": "https://locahost:5173/posts/deploy"
-    },
-    {
         "slug": "typography",
         "fileName": "typography.md",
         "date": "2022-12-31",
@@ -29,7 +13,7 @@
         "summary": "tailwindcss/typography enabled for Markdown pages",
         "author": "Lucy Bates",
         "image": "https://images.unsplash.com/photo-1497250681960-ef046c08a56e?crop=entropy&fit=crop&h=1000&w=2000",
-        "url": "https://locahost:5173/posts/typography"
+        "url": "/posts/typography"
     },
     {
         "slug": "hetzner-cloud",
@@ -46,6 +30,6 @@
         "summary": "We've been using AWS at ServiceStack for 10+ years, it's served us well but suffers from complex & expensive pricing",
         "author": "Brandon Foley",
         "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?crop=entropy&fit=crop&h=1000&w=2000",
-        "url": "https://locahost:5173/posts/hetzner-cloud"
+        "url": "/posts/hetzner-cloud"
     }
 ]
