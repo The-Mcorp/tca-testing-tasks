@@ -1,3 +1,9 @@
+# THIS REPO HAS BEEN ARCHIVED
+> [!IMPORTANT]  
+> The work done in this repo was to assist TA with AI Coding Agent adoption. It is no longer needed
+---
+---
+---
 # TCA Testing Tasks
 
 A Vue.js and .NET 8.0 application for managing testing tasks, designed for Visual Studio on Windows.
